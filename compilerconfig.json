@@ -1,0 +1,34 @@
+﻿[
+  {
+    "outputFile": "Content/newnavstyle.css",
+    "inputFile": "Content/newnavstyle.scss"
+  },
+  {
+    "outputFile": "Content/navbar.css",
+    "inputFile": "Content/navbar.less"
+  },
+  {
+    "outputFile": "Content/Movingslide.css",
+    "inputFile": "Content/Movingslide.scss"
+  },
+  {
+    "outputFile": "Content/_component-examples.css",
+    "inputFile": "Content/_component-examples.scss"
+  },
+  {
+    "outputFile": "Content/breadScrumb.css",
+    "inputFile": "Content/breadScrumb.scss"
+  },
+  {
+    "outputFile": "Content/shininbtn.css",
+    "inputFile": "Content/shininbtn.less"
+  },
+  {
+    "outputFile": "Content/shininbtn.css",
+    "inputFile": "Content/shininbtn.scss"
+  },
+  {
+    "outputFile": "Content/slideContent.css",
+    "inputFile": "Content/slideContent.scss"
+  }
+]

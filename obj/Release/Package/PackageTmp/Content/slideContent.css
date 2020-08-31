@@ -1,0 +1,112 @@
+﻿
+img#nn2{
+    margin:0px;
+
+}
+
+#centerDiv{
+   
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px;
+
+}
+#container11 {
+    width: 100%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+h1#header {
+  text-align: center;
+  padding: 50px;
+  font-size: 62px;
+  font-family: "Pacifico";
+  text-shadow: 0 2px 2px #3c77b3; }
+
+.article-wrapper {
+  transition: width 0.4s; }
+
+article {
+  position: relative;
+  padding-left: 180px;
+  padding-right: 75px;
+  height: 150px;
+  margin-bottom: 30px;
+  background-color: #FFF;
+  border-radius: 150px;
+  cursor: pointer; }
+    article .img-wrapper {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        border-radius: 300px;
+        background-color: #00cbcc;
+        padding: 10px;
+        transition: all 0.2s;
+    }
+    article .img-wrapper img {
+      border-radius: 100px;
+      transition: all 0.2s;
+      width: 150px; }
+    article h1 {
+        height: 75px;
+        line-height: 75px;
+        font-size: 24px;
+        border-bottom: 2px solid #CDE;
+        color: #00cbcc;
+        transition: all 0.4s;
+    }
+  article p {
+    color: #888; }
+    article a#nn1 {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        line-height: 150px;
+        text-align: center;
+        width: 100%;
+        background-color: #00cbcc;
+        font-size: 48px;
+        font-style: italic;
+        opacity: 0;
+        color: #FFF !important;
+        transition: all 0.4s;
+        text-decoration: none !important;
+        border-radius: 150px;
+        font-family: "Pacifico";
+        text-shadow: 0 1px 1px #AAA;
+    }
+  article:hover .img-wrapper {
+    padding: 5px;
+    transform: rotate(5deg); }
+    article:hover .img-wrapper img {
+      width: 160px; }
+  article:hover a#nn1 {
+    opacity: 1; }
+
+.bloc article {
+  padding: 10px;
+  height: 225px;
+  border-radius: 3px;
+  margin-top: 75px; }
+  .bloc article .img-wrapper {
+    position: relative;
+    top: -85px;
+    width: 170px;
+    left: inherit;
+    margin: auto;
+    margin-bottom: -100px; }
+  .bloc article h1 {
+    font-size: 14px;
+    height: 37.5px;
+    line-height: 37.5px; }
+  .bloc article p {
+    font-size: 12px; }
+  .bloc article a#nn1 {
+    border-radius: 3px;
+    line-height: 255px; }
