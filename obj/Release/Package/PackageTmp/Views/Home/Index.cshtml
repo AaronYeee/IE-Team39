@@ -2,25 +2,26 @@
     ViewBag.Title = "Home Page";
 }
 
+
 <header class="masthead">
 
 
 
-    <div class="container">
 
-        <div class="masthead-subheading">
-            Little hands<br /><br />
-            shaping the world
-        </div>
-
-        <div class="masthead-subhead"></div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#portfolio">Tell Me More</a>
-
+    <div class="masthead-subheading" style="color:white; text-shadow: black 0.1em 0.1em 0.2em">
+        Little hands<br /><br />
+        shaping the world
     </div>
+
+    <div class="masthead-subhead"></div>
+    <a class="btn btn-primary btn-xl1 js-scroll-trigger" href="#portfolio">Learn More</a>
+    <link href="~/Content/Vis-nav.css" rel="stylesheet" />
+
+
 </header>
 <!-- Portfolio Grid-->
 <section class="page-section bg-light" id="portfolio">
-    <div class="container">
+    <div class="container-fluid" style="background-color:white">
         <!--moving slide-->
         <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -73,7 +74,7 @@
 
                 <div class="container list-article">
                     <div class="clearfix"></div>
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-xs-12 article-wrapper" id="centerDiv">
                             <article>
                                 <a href="#portfolioModal6" class="more portfolio-link" data-toggle="modal" id="nn1">more</a>
@@ -91,7 +92,7 @@
 
             </div>
 
-        
+
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -114,88 +115,90 @@
 
             </h3>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+        <div class="container " id="block-size">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-1-Image-Highqualitycirriculum-min.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">About kinder</div>
+                            <div class="portfolio-caption-subheading text-muted">It does matter to our kids</div>
                         </div>
-                        <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-1-Image-Highqualitycirriculum-min.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">About kinder</div>
-                        <div class="portfolio-caption-subheading text-muted">It does matter to our kids</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-Image-2-Resources-and-Environment-min.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">What our children Learning?</div>
+                            <div class="portfolio-caption-subheading text-muted">Not just the study</div>
                         </div>
-                        <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-Image-2-Resources-and-Environment-min.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">What our children Learning?</div>
-                        <div class="portfolio-caption-subheading text-muted">Not just the study</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-3-Wellbeing-and-nutrition-min.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Health, Safety & Wellbeing</div>
+                            <div class="portfolio-caption-subheading text-muted">our highest priority</div>
                         </div>
-                        <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-3-Wellbeing-and-nutrition-min.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Health, Safety & Wellbeing</div>
-                        <div class="portfolio-caption-subheading text-muted">our highest priority</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-image-4-Community-min.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Financial Support</div>
+
                         </div>
-                        <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/themes/guardian-elg-child-2019/img/home/Homepage-image-4-Community-min.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Financial Support</div>
-                        <div class="portfolio-caption-subheading text-muted">We’re here to help when times get tough</div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/uploads/2020/07/Homepage_slider_image_ccs-min.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">CHILDCARE FOR COVID-19</div>
+
                         </div>
-                        <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/uploads/2020/07/Homepage_slider_image_ccs-min.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">CHILDCARE FOR COVID-19</div>
-                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/uploads/2020/05/Acqusition.png" alt="" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Learning for Parents</div>
+
                         </div>
-                        <img class="img-fluid" src="https://www.guardian.edu.au/wp-content/uploads/2020/05/Acqusition.png" " alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Learning for Parents</div>
-                        <div class="portfolio-caption-subheading text-muted">There are some things you should know</div>
                     </div>
                 </div>
             </div>
@@ -206,125 +209,25 @@
 
 
 <!-- Visualization-->
-<section class="page-section" id="visu-data" style="height:1000px;min-height:100px">
-    <div class="container" style="height:100%">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Current Trend of Kindergarten</h2>
-            <h3 class="section-subheading text-muted">
-
-            </h3>
+<section class="section" id="vis-nav">
+    <div class="background-one" id="vis-nav">
+        <div class="link-container" id="vis-nav">
+            <!---<a class="link-one1" data-toggle="modal" id="vis-nav" href="#vis-dialog">Current Trends</a>-->
+            <div class="link-one1" id="vis-nav">@Html.ActionLink("Current Trends", "Visudemo", "Home", new { @class = "link-one1",@id= "vis-nav" })</div>
         </div>
+    </div>
+    <div class="link-container" style=" background-image: url(../Content/assets/img/banner/bannerB.PNG);
+        background-repeat: no-repeat;
+        background-size: auto" id="vis-nav">
+        <div class="media111">
 
-        <div>
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Looking for your location?
-            </button>
-
-            <div class="dropdown-menu" id="area_pker" aria-labelledby="dropdownMenuButton">
-                <div id="li1" class="dropdown-item">None</div>
-                <div id="li1" class="dropdown-item">Ararat（RC）</div>
-                <div id="li1" class="dropdown-item">Benalla (RC)</div>
-                <div id="li1" class="dropdown-item">Mildura(RC)</div>
-                <div id="li1" class="dropdown-item">Swan Hill (RC)</div>
-                <div id="li1" class="dropdown-item">Wangaratta(RC)</div>
-                <div id="li1" class="dropdown-item">Wodonga(RC)</div>
+            <div class="layer">
+                <p>
+                    A Child’s time spent in a Kinder plays a very crucial role in the child’s development and learning. Parents in Australia enrol their children to kindergarten when their children turn 4.
+                    Want to have a look at current trends for kindergarten enrollments and decide for your kids ?
+                </p>
             </div>
-
-
-
-
-
         </div>
-
-
-
-        <div id="container" style="height: 100%"></div>
-
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
-        <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
-        <script type="text/javascript">
-            var dom = document.getElementById("container");
-            var myChart = echarts.init(dom);
-            var app = {};
-            option = null;
-
-            setTimeout(function () {
-
-                option = {
-                    legend: {},
-                    tooltip: {
-                        trigger: 'axis',
-                        showContent: true
-                    },
-                    dataset: {
-
-                        source: [
-                            ['product', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017'],
-                            ['Cities', 73.1, 79.4, 87.23, 94.33, 99.7, 85.1, 89.99, 93.77, 95.67, 98.77],
-                            ['Rural Cities', 68.1, 74.4, 82.23, 89.33, 94.7, 81.1, 83.99, 88.77, 90.67, 93.77],
-                            ['Boroughs', 62.1, 68.4, 76.23, 83.33, 88.7, 85.1, 78.99, 83.77, 85.67, 88.77],
-                            ['Shires', 69.1, 75.4, 88.23, 94.33, 85.7, 95.1, 86.99, 91.77, 96.67, 99.77]
-                        ]
-                    },
-                    xAxis: { type: 'category' },
-                    yAxis: { gridIndex: 0 },
-                    grid: { top: '55%' },
-                    series: [
-                        { type: 'line', smooth: true, seriesLayoutBy: 'row' },
-                        { type: 'line', smooth: true, seriesLayoutBy: 'row' },
-                        { type: 'line', smooth: true, seriesLayoutBy: 'row' },
-                        { type: 'line', smooth: true, seriesLayoutBy: 'row' },
-                        {
-                            type: 'pie',
-                            id: 'pie',
-                            radius: '30%',
-                            center: ['50%', '25%'],
-                            label: {
-                                formatter: '{b}: {2008} ({d}%)'
-                            },
-                            encode: {
-                                itemName: 'product',
-                                value: '2008',
-                                tooltip: '2008'
-                            }
-                        }
-                    ]
-                };
-
-
-
-                myChart.on('updateAxisPointer', function (event) {
-                    var xAxisInfo = event.axesInfo[0];
-                    if (xAxisInfo) {
-                        var dimension = xAxisInfo.value + 1;
-                        myChart.setOption({
-                            series: {
-                                id: 'pie',
-                                label: {
-                                    formatter: '{b}: {[' + dimension + ']} ({d}%)'
-                                },
-                                encode: {
-                                    value: dimension,
-                                    tooltip: dimension
-                                }
-                            }
-                        });
-                    }
-                });
-
-                myChart.setOption(option);
-
-            });;
-            if (option && typeof option === "object") {
-                myChart.setOption(option, true);
-            }
-        </script>
 
 
     </div>
@@ -332,111 +235,62 @@
 </section>
 
 
-<!-- About-->
-<section class="page-section" id="about" style="margin-top:100px">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Kindergarten Eligibility</h2>
-            <h3 class="section-subheading text-muted">
-                Step wise guide for kinder enrolment
-            </h3>
+<!--vis dialog end-->
+
+<!--Kindergarten Eligibility-->
+<section class="section" id="eli-nav">
+    <div class="link-container" style=" background-image: url(../Content/assets/img/banner/bannerA.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%" id="vis-nav">
+        <div class="media111">
+
+            <div class="layer">
+                <p>
+                    Just moved to Australia? Want your child to be school ready ? Confused on how to enrol your child to a nearby kinder ? Here is a step wise guide on how to enrol your child to your nearest kindergarten.
+                </p>
+            </div>
         </div>
-        <ul class="timeline">
-            <li>
-                <a class="portfolio-link" data-toggle="modal" href="#Eli1">
-                    <div class="portfolio-hover">
-                        <div class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="~/Content/assets/img/Carousel/step1.PNG"  alt="" />
-                        </div>
-                    </div>
-                </a>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Step 1</h4>
-                        <h4 class="subheading">Kindergarten selection </h4>
-                    </div>
-                    <div class="timeline-body"><p class="text-muted">In this step, parents are required to choose a nearby kindergarten, book an appointment with the selected kindergarten and check for various quality aspects of the kindergarten. In order to go through stepwise information, please click this image.</p></div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <a class="portfolio-link" data-toggle="modal" href="#Eli2">
-                    <div class="portfolio-hover">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/assets/img/Carousel/step2.PNG" alt="" /></div>
-                    </div>
-                </a>
 
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Step 2</h4>
-                        <h4 class="subheading">Kindergarten costing</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted">
-                            In this step, parents are required to go through kinder related expenses and fee structures. In order to expand this section, please click this image.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a class="portfolio-link" data-toggle="modal" href="#Eli3">
-                    <div class="portfolio-hover">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/assets/img/Carousel/step3.PNG" alt="" /></div>
-                    </div>
-                </a>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Step 3</h4>
-                        <h4 class="subheading">Kindergarten enrolment checklist:</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted">
-                            In this section you will be able to view all the documents that are required for enrolment to the selected kindergarten. Please click on this image in order to view the checklist.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <a class="portfolio-link" data-toggle="modal" href="#Eli4">
-                    <div class="portfolio-hover">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="~/Content/assets/img/Carousel/step4.PNG" alt="" /></div>
-                    </div>
-                </a>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>Step 4</h4>
-                        <h4 class="subheading">First day at kindergarten checklist:</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted">
-                            In this section you will be able to view all the activities and tasks that you should keep in mind when dropping off your child to kindergarten for the first time. Please click on the image in order to view the checklist.
+    </div>
 
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <a class="portfolio-link" data-toggle="modal" href="#Eli5">
-                    <div class="portfolio-hover">
-                        <div class="timeline-image">
-                            <h4>
-                                You are
-                                <br />
-                                ready for
-                                <br />
-                                Kinder!
-                                <br />
-                            </h4>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <h5 style="color:black;text-align: center">Click above for more information</h5>
+    <div class="background-three" id="vis-nav">
+        <div class="link-container" id="vis-nav">
+            <div >@Html.ActionLink("Kindergarten Eligibility", "kinderEli", "Home", new { @class = "link-three", @id = "eli-nav" })</div>
+        </div>
     </div>
 </section>
+
+
+
+<!-- find kinder-->
+<section class="section" id="find-nav">
+    <div class="background-two link-container" id="vis-nav">
+        <a class="link-two" id="vis-nav" href="https://jhancock532.github.io/link-hover-effects/">Find<br />Here</a>
+    </div>
+
+
+    <div class="link-container" style=" background-image: url(../Content/assets/img/banner/banner3.PNG);
+        background-repeat: no-repeat;
+        background-size: 100%" id="vis-nav">
+        <div class="media111">
+
+            <div class="layer">
+                <p>
+                    With so many kindergartens in Victoria, it is important for your child to attend a kindergarten that is near to your workplace or your home. This allows you to pick/drop your child without any hassle. Looking for a Kinder nearby ? Don't know where to start ? Click the image and explore nearby kindergartens based upon your Suburb
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+
 <!-- Team-->
 <section class="page-section bg-light" id="team">
-    <div class="container">
+    <div class="container-fluid">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
             <h3 class="section-subheading text-muted">
@@ -450,7 +304,7 @@
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="~/Content/assets/img/team/1.jpg" alt="" />
                     <h4>Gauri</h4>
-                    <p class="text-muted">Team Leader</p>
+                    <p class="text-muted">123</p>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
@@ -488,13 +342,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
         </div>
     </div>
 </section>
 <!-- Clients-->
 <div class="py-5">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 col-sm-6 my-3">
                 <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="" /></a>
@@ -513,10 +367,10 @@
 </div>
 <!-- Contact-->
 <section class="page-section" id="contact">
-    <div class="container">
+    <div class="container-fluid">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted"></h3>
         </div>
         <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row align-items-stretch mb-5">
@@ -550,9 +404,9 @@
 </section>
 <!-- Footer-->
 <footer class="footer py-4">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+            <div class="col-lg-4 text-lg-left"></div>
             <div class="col-lg-4 my-3 my-lg-0">
                 <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
@@ -573,7 +427,7 @@
             <div class="close-modal" data-dismiss="modal">
                 <img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" />
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -583,7 +437,7 @@
                             <div class="header" id="dialog1">
                                 <h1>Kindergarten</h1>
                             </div>
-                        
+
                             <div class="content" id="dialog1">
                                 <p>
                                     Kindergartens play an important role in a child's development. It’s an integral part of early childhood development. The first five years are the foundational years of a child’s life. They learn the most in the first five years of their childhood. Kindergartens create new experiences for children of age three to four-year old so that they learn life skills before starting school. Your child will develop essential skills such as social, emotional and problem-solving abilities that will become the building blocks of their future.
@@ -633,18 +487,18 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-   </div>
 <!-- Modal 2-->
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -655,7 +509,7 @@
                                 <h1></h1>
                                 <h2></h2>
                             </div>
-                         
+
                             <div class="content" id="dialog1">
 
                                 <p>
@@ -722,7 +576,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -802,7 +656,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -899,7 +753,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -956,7 +810,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -976,7 +830,7 @@
                                     Few things parents can do enhance their child’s development.<br /><br />
                                     There are some things you should know:
                                 </p>
-                                
+
                                 <p>
                                     <ul>
                                         <li>
@@ -1017,7 +871,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -1076,25 +930,26 @@
 
 
                                     <br />
-                           
+
                                 </p>
 
 
 
 
                             </div>
-                                <!--content template-->
-                                <ul class="list-inline">
-                                    <li></li>
-                                    <li></li>
-                                    <li> </li>
-                                </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fas fa-times mr-1"></i>
-                                    Go Back
-                                </button>
-                            </div>
+
+                            <!--content template-->
+                            <ul class="list-inline">
+                                <li></li>
+                                <li></li>
+                                <li> </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Go Back
+                            </button>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1105,7 +960,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -1213,7 +1068,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="modal-body">
@@ -1281,209 +1136,213 @@
 </div>
 
 <!-- Modal 4-->
-    <div class="portfolio-modal modal fade" id="Eli4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here-->
-                                <div class="header" id="dialog1">
-                                    <h1>First day at kindergarten checklist</h1>
-                                    <h2></h2>
-                                </div>
-                                <div class="content" id="dialog1">
-                                    <h2 class="content-subhead">Step 4</h2>
-                                    <p>
-                                        <ul>
-                                            <li>
-                                                Greet the child bye and make them understand that he/she will be at kinder without the parents as this is the first time for the child without parents around.
-                                            </li>
-                                            <br />
+<div class="portfolio-modal modal fade" id="Eli4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <div class="header" id="dialog1">
+                                <h1>First day at kindergarten checklist</h1>
+                                <h2></h2>
+                            </div>
+                            <div class="content" id="dialog1">
+                                <h2 class="content-subhead">Step 4</h2>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            Greet the child bye and make them understand that he/she will be at kinder without the parents as this is the first time for the child without parents around.
+                                        </li>
+                                        <br />
 
-                                            <li>
-                                                Make sure the child is appropriately dressed according to the kinder guidelines.
-                                            </li>
-                                            <br />
-                                            <li>
-                                                Make sure to give medicines, water, food and other necessary items to the child.
-                                            </li>
-                                            <br />
-                                            <li>
-                                                Follow kinder instructions and send cap/extra clothes/towel/napkin and other stuff with the child.
-                                            </li>
-                                            <br />
-                                            <li>
-                                                Drop your child and stay for 10 minutes in order to see if everything is fine.
-                                            </li>
-                                            <br />
-                                            <li>
-                                                Pick your child up well on time and ask how the day went.
-                                            </li>
-                                            <br />
+                                        <li>
+                                            Make sure the child is appropriately dressed according to the kinder guidelines.
+                                        </li>
+                                        <br />
+                                        <li>
+                                            Make sure to give medicines, water, food and other necessary items to the child.
+                                        </li>
+                                        <br />
+                                        <li>
+                                            Follow kinder instructions and send cap/extra clothes/towel/napkin and other stuff with the child.
+                                        </li>
+                                        <br />
+                                        <li>
+                                            Drop your child and stay for 10 minutes in order to see if everything is fine.
+                                        </li>
+                                        <br />
+                                        <li>
+                                            Pick your child up well on time and ask how the day went.
+                                        </li>
+                                        <br />
 
-                                            <li>
-                                                Be supportive and encourage your child to attend kinder.
-                                            </li>
-                                            <br />
+                                        <li>
+                                            Be supportive and encourage your child to attend kinder.
+                                        </li>
+                                        <br />
 
-                                        </ul>
-                                    </p>
-
-
-                                    <ul class="list-inline">
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
                                     </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Go Back
-                                    </button>
-                                </div>
+                                </p>
+
+
+                                <ul class="list-inline">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fas fa-times mr-1"></i>
+                                    Go Back
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+</div>
 
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="Eli5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <div class="header" id="dialog1">
-                                        <h1>Kindergarten enrollment</h1>
-                                        <h2></h2>
-                                    </div>
-                                  
-                                    <div class="content" id="dialog1">
-                                        <p>
-                                            Most Kindergarten program provided in VIC which is included in the early childhood education is regulated under Nation Quality Framework. All the kindergarten services must meet the requirements in the framework.<br /><br />
-                                            More information about the Nation Quality Framework:
-                                            <ul>
-                                                <li>
-                                                    <a id="dialog1" href="https://www.legislation.vic.gov.au/in-force/acts/education-and-care-services-national-law-act-2010/012">Education and Care Services National Law Act 2010 </a>
-                                                </li>
-                                                <br />
-                                                <li>
-                                                    <a id="dialog1" href=" https://www.legislation.vic.gov.au/search?q=Education+and+Care+Services+National+Regulations&page=1&sort%5B_score%5D=desc&sort%5Btitle_az%5D=asc&queryType=title">Education and Care Services National Regulations</a>
+<!-- Modal 5-->
+<div class="portfolio-modal modal fade" id="Eli5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/Carousel/close1.png" alt="Close modal" /></div>
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <div class="header" id="dialog1">
+                                <h1>Kindergarten enrollment</h1>
+                                <h2></h2>
+                            </div>
 
-                                                </li></br>
-                                                <li>
-                                                    <a id="dialog1" href="https: //www.education.vic.gov.au/Documents/childhood/providers/regulation/NQSDescriptorTable.pdf">National Quality Standard (ACECQA) and National Quality Standard Table </a> <br />
-                                                    (It is a high national assessment and rate standard for early childhood education services in 7 quality area, “educational program and practice”, “children's health and safety”, “physical environment”, “staffing arrangements”, “Relationships with children” and “Collaborative partnerships with families and communities”.)
+                            <div class="content" id="dialog1">
+                                <p>
+                                    Most Kindergarten program provided in VIC which is included in the early childhood education is regulated under Nation Quality Framework. All the kindergarten services must meet the requirements in the framework.<br /><br />
+                                    More information about the Nation Quality Framework:
+                                    <ul>
+                                        <li>
+                                            <a id="dialog1" href="https://www.legislation.vic.gov.au/in-force/acts/education-and-care-services-national-law-act-2010/012">Education and Care Services National Law Act 2010 </a>
+                                        </li>
+                                        <br />
+                                        <li>
+                                            <a id="dialog1" href=" https://www.legislation.vic.gov.au/search?q=Education+and+Care+Services+National+Regulations&page=1&sort%5B_score%5D=desc&sort%5Btitle_az%5D=asc&queryType=title">Education and Care Services National Regulations</a>
 
-                                                </li>
+                                        </li></br>
+                                        <li>
+                                            <a id="dialog1" href="https: //www.education.vic.gov.au/Documents/childhood/providers/regulation/NQSDescriptorTable.pdf">National Quality Standard (ACECQA) and National Quality Standard Table </a> <br />
+                                            (It is a high national assessment and rate standard for early childhood education services in 7 quality area, “educational program and practice”, “children's health and safety”, “physical environment”, “staffing arrangements”, “Relationships with children” and “Collaborative partnerships with families and communities”.)
 
-                                            </ul>
-                                            In VIC, the Nation Quality Framework is administered by the Victoria State government and the Australian Education and Care Quality Authority (ACECQA) approving qualified servers and providers, assessing and rating quality and checking for conformance to requirements of Nation Law and Nation Regulation. More information about the authorized regulations refer to Regulatory Framework concerning <a id="dialog1" href="https://www.education.vic.gov.au/Documents/childhood/providers/regulation/Regframework.pdf">Education and Care Services in Victoria</a>.<br />
+                                        </li>
 
-                                            Some other early childhood services are regulated under Victorian state law, Victorian Children’s Services Act 1996. The services they provide usually are occasional and mobile care services and non-funded services.<br />
+                                    </ul>
+                                    In VIC, the Nation Quality Framework is administered by the Victoria State government and the Australian Education and Care Quality Authority (ACECQA) approving qualified servers and providers, assessing and rating quality and checking for conformance to requirements of Nation Law and Nation Regulation. More information about the authorized regulations refer to Regulatory Framework concerning <a id="dialog1" href="https://www.education.vic.gov.au/Documents/childhood/providers/regulation/Regframework.pdf">Education and Care Services in Victoria</a>.<br />
 
-                                        </p>
+                                    Some other early childhood services are regulated under Victorian state law, Victorian Children’s Services Act 1996. The services they provide usually are occasional and mobile care services and non-funded services.<br />
 
-                                    </div>
+                                </p>
+
+                            </div>
 
 
 
-                          
-                                        <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                            <i class="fas fa-times mr-1"></i>
-                                            Go Back
-                                        </button>
-                                    </div>
-                                </div>
+
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Go Back
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
 
-        <!--end of ELIGIBILITY-->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="~/Scripts/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!--bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
 
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
+<!--end of ELIGIBILITY-->
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="~/Scripts/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<script src="assets/mail/jqBootstrapValidation.js"></script>
+<script src="assets/mail/contact_me.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
 
-        </script>
-        <script>
-            var slideIndex1 = 0;
-            showSlides1();
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-            function showSlides1() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slideIndex1++;
-                if (slideIndex1 > slides.length) { slideIndex1 = 1 }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex1 - 1].style.display = "block";
-                dots[slideIndex1 - 1].className += " active";
-                setTimeout(showSlides1, 5000); // Change image every 2 seconds
-            }
-        </script>
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+</script>
+<script>
+    var slideIndex1 = 0;
+    showSlides1();
+
+    function showSlides1() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex1++;
+        if (slideIndex1 > slides.length) { slideIndex1 = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex1 - 1].style.display = "block";
+        dots[slideIndex1 - 1].className += " active";
+        setTimeout(showSlides1, 5000); // Change image every 2 seconds
+    }
+</script>
 
 
 

@@ -181,10 +181,15 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assets\bai12.png" />
+    <Content Include="Content\assets\cai12.png" />
     <Content Include="Content\assets\img\about\1.jpg" />
     <Content Include="Content\assets\img\about\2.jpg" />
     <Content Include="Content\assets\img\about\3.jpg" />
     <Content Include="Content\assets\img\about\4.jpg" />
+    <Content Include="Content\assets\img\banner\banner3.PNG" />
+    <Content Include="Content\assets\img\banner\bannerA.jpg" />
+    <Content Include="Content\assets\img\banner\bannerB.PNG" />
     <Content Include="Content\assets\img\Carousel\1.jpg" />
     <Content Include="Content\assets\img\Carousel\close1.png" />
     <Content Include="Content\assets\img\Carousel\Slide1.PNG" />
@@ -215,44 +220,79 @@
     <Content Include="Content\assets\img\portfolio\05-thumbnail.jpg" />
     <Content Include="Content\assets\img\portfolio\06-full.jpg" />
     <Content Include="Content\assets\img\portfolio\06-thumbnail.jpg" />
+    <Content Include="Content\assets\img\tab12.png" />
     <Content Include="Content\assets\img\team\1.jpg" />
     <Content Include="Content\assets\img\team\2.jpg" />
     <Content Include="Content\assets\img\team\3.jpg" />
     <Content Include="Content\assets\img\team\4.png" />
+    <Content Include="Content\assets\img\vis-img\barChartIcon.png" />
+    <Content Include="Content\assets\img\vis-img\cd-arrow-back.svg" />
+    <Content Include="Content\assets\img\vis-img\cd-arrow.svg" />
+    <Content Include="Content\assets\img\vis-img\cd-close-dark.svg" />
+    <Content Include="Content\assets\img\vis-img\img.png" />
+    <Content Include="Content\assets\img\vis-img\lineIcon.png" />
+    <Content Include="Content\assets\img\vis-img\PiechartIcon.png" />
     <Content Include="Content\assets\mail\contact_me.js" />
     <Content Include="Content\assets\mail\contact_me.php" />
     <Content Include="Content\assets\mail\jqBootstrapValidation.js" />
+    <Content Include="Content\assets\video\Sp-video.mp4" />
     <Content Include="Content\carousel1.css" />
+    <Content Include="Content\css\reset1.css" />
+    <Content Include="Content\css\style.css" />
     <Content Include="Content\dialogTemplate.css" />
-    <Content Include="Content\Logo.PNG" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="Content\slideContent.scss" />
+    <None Include="Content\nabar_new.scss" />
+    <Content Include="Content\elig-img\cd-icon-arrow.svg" />
+    <Content Include="Content\elig-img\img-1.jpg" />
+    <Content Include="Content\elig-img\img-2.jpg" />
+    <Content Include="Content\elig-img\img-3.jpg" />
+    <Content Include="Content\elig-img\img-4.jpg" />
+    <Content Include="Content\finallogoB.png" />
+    <Content Include="Content\FinallogoW.png" />
+    <Content Include="Content\nabar_new.css">
+      <DependentUpon>nabar_new.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\nabar_new.min.css">
+      <DependentUpon>nabar_new.css</DependentUpon>
+    </Content>
+    <Content Include="Content\reset.css" />
     <Content Include="Content\slideContent.css">
       <DependentUpon>slideContent.scss</DependentUpon>
     </Content>
     <Content Include="Content\slideContent.min.css">
       <DependentUpon>slideContent.css</DependentUpon>
     </Content>
+    <Content Include="Content\Splash.css" />
     <Content Include="Content\styles.css" />
+    <Content Include="Content\vis-dialog.css" />
+    <Content Include="Content\Vis-nav.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\Team39web - Web Deploy.pubxml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Properties\PublishProfiles\Team39web - Web Deploy.pubxml" />
-    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\elig-js\jquery-2.1.1.js" />
+    <Content Include="Scripts\elig-js\main.js" />
+    <Content Include="Scripts\elig-js\modernizr.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\jquery-2.1.4.js" />
+    <Content Include="Scripts\js\jquery.mobile.custom.min.js" />
+    <Content Include="Scripts\js\main.js" />
+    <Content Include="Scripts\js\modernizr.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\scripts.js" />
     <Content Include="Web.config" />
@@ -289,6 +329,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Views\Home\Splash.cshtml" />
+    <Content Include="Views\Home\Visudemo.cshtml" />
+    <Content Include="Views\Home\kinderEli.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,8 +344,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -54,10 +54,11 @@ article {
     article h1 {
         height: 75px;
         line-height: 75px;
-        font-size: 24px;
+        font-size: 100%;
         border-bottom: 2px solid #CDE;
         color: #00cbcc;
         transition: all 0.4s;
+
     }
   article p {
     color: #888; }

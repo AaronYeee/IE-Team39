@@ -1,12 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0，shrink-to-fit=no">
     <title>@ViewBag.Title - ReadyForKinder</title>
+    <link rel="icon" href="http://example.com/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="~/Content/assets/img/tab12.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -29,18 +31,21 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body id="page-top">
+<body id="page-top" style="padding-right:0">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="navbar container ">
-            <div class="navbar nav-item ">@Html.ActionLink("Home", "Index", "Home", new object { }, new { @class = "nav-link" })</div>
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="~/Content/Logo.PNG" alt="" /></a>
+        <div class="navbar container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img id="logo1" src="~/Content/assets/bai12.png" style="max-height:35px" alt="" />
+            
+           </a>
+            <div class="navbar nav-item" id="navbarResponsive" style="font-size:1.3rem">@Html.ActionLink("Home", "Index", "Home", new object { }, new { @class = "nav-link" })</div>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
             </button>
             <!--<li class="nav-item"><div class="nav-link js-scroll-trigger">@Html.ActionLink("About", "About", "Home")</div></li>
-            <li class="nav-item"><div class="nav-link js-scroll-trigger">@Html.ActionLink("Contact", "Contact", "Home")</div></li>-->
+    <li class="nav-item"><div class="nav-link js-scroll-trigger">@Html.ActionLink("Contact", "Contact", "Home")</div></li>-->
 
             <div class="navbar collapse navbar-collapse" id="navbarResponsive">
 
@@ -48,8 +53,8 @@
                     <li class="nav-item" id="first">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Kinder Education</a>
                     </li>
-                    <li class="nav-item" id="second"><a class="nav-link js-scroll-trigger" href="#visu-data">Current Trends</a></li>
-                    <li class="nav-item" id="third"><a class="nav-link js-scroll-trigger" href="#about">Wise Guide</a></li>
+                    <li class="nav-item" id="second"><a class="nav-link js-scroll-trigger" href="#vis-nav">Current Trends</a></li>
+                    <li class="nav-item" id="third"><a class="nav-link js-scroll-trigger" href="#eli-nav">Kinder Eligibility</a></li>
                     <li class="nav-item" id="fourth"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                     <li class="nav-item" id="fifth"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
 
@@ -57,7 +62,7 @@
 
 
                 </ol>
-               <!-- <div class="nav-item"> @Html.Partial("_LoginPartial")</div>-->
+                <!--<div class="nav-item"> @Html.Partial("_LoginPartial")</div>-->
 
             </div>
 
@@ -72,18 +77,16 @@
 
 
 
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    < !-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
@@ -97,6 +100,43 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script>
+    $(window).scroll(function () {
+    if ($(window).scrollTop() >= 100) {
+        $('#mainNav').css('background', '#FFF');
+        $('.nav-link').css({
+            'display': 'block',
+            'padding':' 0.5rem 1rem',
+            'color': '#000',
+            'position': 'relative',
+            'display': 'flex',
+            'flex': '1 1 auto',
+            'margin': '0',
+            'list- style - type': 'none'
+        });
+
+        document.getElementById('logo1').src = "../Content/assets/cai12.png";
+      
+    } else {
+        $('#mainNav').css('background', 'transparent');
+        $('.nav-link').css({
+            'display': 'block',
+            'padding': ' 0.5rem 1rem',
+            'color': '#FFF',
+            'position': 'relative',
+            'display': 'flex',
+            'flex': '1 1 auto',
+            'margin': '0',
+            'list- style - type': 'none'
+        });
+        document.getElementById('logo1').src = "../Content/assets/bai12.png";
+
+    }
+    });
+   </script>
+
     <!--only disply full navigation in homepage-->
     <!----<script type="text/javascript">
         if (window.location.href != "https://localhost:44313/") {
@@ -108,6 +148,7 @@
 
         }
     </script>-->
+
 
 </body>
 </html>

@@ -26,5 +26,23 @@ namespace v1.Controllers
 
             return View();
         }
+        public ActionResult Splash()
+        {
+
+            return View();
+        }
+
+        public ActionResult Visudemo()
+        {
+
+            return View();
+        }
+
+        public ActionResult kinderEli()
+        {
+
+            return View();
+        }
+        
     }
 }

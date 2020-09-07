@@ -1,0 +1,55 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+
+#Sp-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 46, 71, 0.85);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+
+.content#sp-content {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(14, 46, 71, 0.85);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    font-weight:700;
+    font-size:1rem;
+}
+
+.container#sp-content1 {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    top: 40%;
+    margin-left: 10%;
+    margin-top: -25px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#sp-content2 {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+   
+

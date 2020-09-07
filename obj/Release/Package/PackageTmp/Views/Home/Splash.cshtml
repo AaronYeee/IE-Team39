@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Splash";
+    Layout = null;
+}
+
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Splash.css" rel="stylesheet" />
+    <link href="~/Content/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="~/Content/assets/img/tab12.png" />
+    
+</head>
+
+<video autoplay muted loop id="myVideo">
+    <source src="~/Content/assets/video/Sp-video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+
+<body>
+    
+    <div class="content" id="sp-content">
+        <div><img id="logo1" src="~/Content/FinallogoW.png" alt="" style="height:11rem"/></div>
+        <div class="container" id="sp-content1">
+            <div id="sp-content2">
+                <div>
+                    Children from migrated families often face interrupted schooling along with cultural and language barriers.<br />
+                    There can also be signs of social isolation which can inhibit a child's ability to learn and excel.<br /><br />
+                    This is where we step in, at ReadyforKinder<br /> we understand that as migrant parents it can be daunting sometimes
+                    to navigate your way<br /> through of Australian education system.
+
+                </div>
+
+            </div>
+
+            <div style="margin-top: 20px">@Html.ActionLink("Explore", "Index", "Home", new { @class = "btn btn-primary" })</div>
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,294 @@
+﻿
+@{
+    ViewBag.Title = "Visuodemo";
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="~/Content/assets/img/tab12.png" />
+
+
+
+    <link href="~/Content/vis-dialog.css" rel="stylesheet" />
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/buttons.css" rel="stylesheet" />
+
+
+
+    <title>Current Trend</title>
+</head>
+<body>
+    <div style="font-size:2rem;margin-left:43%">@Html.ActionLink("Home", "Index", "Home", new { @class = "btn1" })</div>
+    <div class="cd-intro-block">
+        <div class="content-wrapper">
+            <h1>Current Trends</h1>
+            <h2 style="margin:60px">
+                A Child’s time spent in a Kinder plays a very crucial role in the child’s development and learning.<br /> Parents in Australia enrol their children to kindergarten when their children turn 4.<br />
+                Want to have a look at current trends for kindergarten enrollments and decide for your kids ?
+            </h2>
+            <a id="visu11" href="#0" class='cd-btn' data-action="show-projects">Show graphs</a>
+        </div>
+    </div>
+
+    <!-- .cd-intro-block -->
+
+    <div class="cd-projects-wrapper">
+        <ul class="cd-slider">
+            <li class="current" id="01">
+                <a id="visu11" href="#0">
+                    <img src="~/Content/assets/img/vis-img/lineIcon.png" alt="project image">
+                    <div class="project-info">
+                        <h2>KG participation VIC</h2>
+                        <p>Pie & Line Charts</p>
+
+                    </div>
+                </a>
+            </li>
+
+            <li id="02">
+                <a id="visu11" href="#0">
+                    <img src="~/Content/assets/img/vis-img/PiechartIcon.png" alt="project image">
+                    <div class="project-info">
+                        <h2>Crimes records</h2>
+                        <p>Top 5 Crimes records LGAs with pie chart</p>
+                    </div>
+                </a>
+            </li>
+
+
+            <!--
+            <li id="03">
+                <a id="visu11" href="#0">
+                    <img src="~/Content/assets/img/vis-img/barChartIcon.png" alt="project image">
+                    <div class="project-info">
+                        <h2>Graph 3</h2>
+                        <p>Description3</p>
+                    </div>
+                </a>
+            </li>
+            -->
+
+
+        </ul>
+
+
+        <!-- <ul class="cd-slider-navigation cd-img-replace">
+            <li><a href="#0" class="prev inactive">Prev</a></li>
+            <li><a href="#0" class="next">Next</a></li>
+        </ul> <!-- .cd-slider-navigation -->
+
+    </div>
+    <!-- .cd-projects-wrapper -->
+    <div class="cd-project-content" id='content0'>
+
+        <h2 style="margin:50px">Current Trend of Kindergarten</h2>
+
+
+
+        <div>
+
+            <!-- Visualization-->
+
+
+
+
+            <h>A line chart shows a trend of Kindergarten participation in different type of suburbs in Victoria.</h> <br /> <br />
+            <h>A bar chart compare the percentage of participation in four types of suburbs. You could click legends to select the types of the suburbs.</h><br /><br />
+            <h style="margin-bottom:30px">Hover mouse on the line chart to see the detailed information and update pie chart data.</h><br /><br />
+
+
+            <div class="container-fluid" style="height:100%;margin:20px">
+
+
+                <div id="container" style="height: 80%"></div>
+
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+                <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+                <script type="text/javascript">
+                    var dom = document.getElementById("container");
+                    var myChart = echarts.init(dom);
+                    var app = {};
+                    option = null;
+
+                    setTimeout(function () {
+
+                        option = {
+                            legend: {},
+                            tooltip: {
+                                trigger: 'axis',
+                                showContent: true
+                            },
+                            dataset: {
+
+                                source: [
+                                    ['product', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017'],
+                                    ['Cities', 73.1, 79.4, 87.23, 94.33, 99.7, 85.1, 89.99, 93.77, 95.67, 98.77],
+                                    ['Rural Cities', 68.1, 74.4, 82.23, 89.33, 94.7, 81.1, 83.99, 88.77, 90.67, 93.77],
+                                    ['Boroughs', 62.1, 68.4, 76.23, 83.33, 88.7, 85.1, 78.99, 83.77, 85.67, 88.77],
+                                    ['Shires', 69.1, 75.4, 88.23, 94.33, 85.7, 95.1, 86.99, 91.77, 96.67, 99.77]
+                                ]
+                            },
+                            xAxis: { type: 'category' },
+                            yAxis: { gridIndex: 0 },
+                            grid: { top: '55%' },
+                            series: [
+                                { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                { type: 'line', smooth: true, seriesLayoutBy: 'row' },
+                                {
+                                    type: 'pie',
+                                    id: 'pie',
+                                    radius: '30%',
+                                    center: ['50%', '25%'],
+                                    label: {
+                                        formatter: '{b}: {2008} ({d}%)'
+                                    },
+                                    encode: {
+                                        itemName: 'product',
+                                        value: '2008',
+                                        tooltip: '2008'
+                                    }
+                                }
+                            ]
+                        };
+
+
+
+                        myChart.on('updateAxisPointer', function (event) {
+                            var xAxisInfo = event.axesInfo[0];
+                            if (xAxisInfo) {
+                                var dimension = xAxisInfo.value + 1;
+                                myChart.setOption({
+                                    series: {
+                                        id: 'pie',
+                                        label: {
+                                            formatter: '{b}: {[' + dimension + ']} ({d}%)'
+                                        },
+                                        encode: {
+                                            value: dimension,
+                                            tooltip: dimension
+                                        }
+                                    }
+                                });
+                            }
+                        });
+
+                        myChart.setOption(option);
+
+                    });;
+                    if (option && typeof option === "object") {
+                        myChart.setOption(option, true);
+                    }
+                </script>
+
+
+            </div>
+
+
+        </div>
+
+        <a id="visu11" href="#0" class="close cd-img-replace">Close</a>
+    </div>
+
+
+    <div class="cd-project-content" id='content1'>
+        <div>
+            <h2>Top 5 Crimes records LGAs </h2>
+
+            <div id="container2" style="height: 100%"></div>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+            <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+            <script type="text/javascript">
+                var dom1 = document.getElementById("container2");
+                var myChart1 = echarts.init(dom1);
+                var app = {};
+                option = null;
+                option = {
+                    title: {
+                        text: 'Top 5 LGAs for total recorded offences',
+                        subtext: 'For the year ended March 2018',
+                        left: 'center',
+                        top: '10%'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{a} <br/>{b} : {c} ({d}%)'
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        left: 'left',
+                        data: ['Melbourne', 'Greater Geelong', 'Hume', 'Casey', 'Greater Dandenong'],
+                        top: '20%'
+                    },
+                    series: [
+                        {
+                            name: 'total recorded offences',
+                            type: 'pie',
+                            radius: '55%',
+                            center: ['50%', '60%'],
+                            data: [
+                                { value: 335, name: 'Melbourne' },
+                                { value: 310, name: 'Greater Geelong' },
+                                { value: 234, name: 'Hume' },
+                                { value: 135, name: 'Casey' },
+                                { value: 1548, name: 'Greater Dandenong' }
+                            ],
+                            emphasis: {
+                                itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        }
+                    ]
+                };
+                ;
+                if (option && typeof option === "object") {
+                    myChart1.setOption(option, true);
+                }
+            </script>
+
+        </div>
+
+        <a id="visu11" href="#0" class="close cd-img-replace">Close</a>
+    </div> <!-- .cd-project-content -->
+
+    <div class="cd-project-content" id='content2'>
+        <div>
+            <h2>Graph title 3</h2>
+
+        </div>
+
+        <a id="visu11" href="#0" class="close cd-img-replace">Close</a>
+    </div> <!-- .cd-project-content -->
+
+    <script src="~/Scripts/js/jquery-2.1.4.js"></script>
+    <script src="~/Scripts/js/jquery.mobile.custom.min.js"></script>
+    <script src="~/Scripts/js/main.js"></script>
+    <script src="~/Scripts/js/modernizr.js"></script>
+
+
+
+
+</body>
+</html>

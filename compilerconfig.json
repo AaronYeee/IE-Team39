@@ -30,5 +30,13 @@
   {
     "outputFile": "Content/slideContent.css",
     "inputFile": "Content/slideContent.scss"
+  },
+  {
+    "outputFile": "Content/nabar_new.css",
+    "inputFile": "Content/nabar_new.scss"
+  },
+  {
+    "outputFile": "Content/buttons.css",
+    "inputFile": "Content/buttons.scss"
   }
 ]
